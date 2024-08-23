@@ -1,0 +1,124 @@
+{
+    "reviews" : [
+    {
+        "professor": "Dr. Emily Johnson",
+        "university": "Tech University",
+        "stars": 4.7,
+        "review": "Dr. Johnson's lectures are engaging and informative. She really knows how to explain complex topics clearly."
+    },
+    {
+        "professor": "Prof. Michael Lee",
+        "university": "State College",
+        "stars": 3.9,
+        "review": "Prof. Lee is knowledgeable but his lectures can be a bit dry. A lot of self-study is needed."
+    },
+    {
+        "professor": "Dr. Sarah Thompson",
+        "university": "Central University",
+        "stars": 4.8,
+        "review": "Dr. Thompson's passion for biology is contagious. Her labs are well-organized and very helpful."
+    },
+    {
+        "professor": "Prof. David Wilson",
+        "university": "City College",
+        "stars": 4.2,
+        "review": "Prof. Wilson explains math concepts in a way that's easy to understand, but his exams are tough."
+    },
+    {
+        "professor": "Dr. Jessica Brown",
+        "university": "West University",
+        "stars": 4.5,
+        "review": "Dr. Brown is a wonderful professor who genuinely cares about her students' success."
+    },
+    {
+        "professor": "Prof. Robert Clark",
+        "university": "East State University",
+        "stars": 3.7,
+        "review": "Prof. Clark's lectures are informative, but he tends to go off-topic sometimes."
+    },
+    {
+        "professor": "Dr. Linda Martinez",
+        "university": "Northern University",
+        "stars": 4.6,
+        "review": "Dr. Martinez makes complex concepts easy to grasp with her clear explanations and examples."
+    },
+    {
+        "professor": "Prof. Richard Davis",
+        "university": "Southern College",
+        "stars": 4.0,
+        "review": "Prof. Davis is knowledgeable, but his lectures can be monotonous at times."
+    },
+    {
+        "professor": "Dr. Karen Anderson",
+        "university": "Coastal University",
+        "stars": 4.9,
+        "review": "Dr. Anderson is an amazing professor who goes above and beyond to help her students."
+    },
+    {
+        "professor": "Prof. James White",
+        "university": "Valley State University",
+        "stars": 3.8,
+        "review": "Prof. White's classes are well-structured, but the grading is quite strict."
+    },
+    {
+        "professor": "Dr. Patricia Harris",
+        "university": "River University",
+        "stars": 4.3,
+        "review": "Dr. Harris is an excellent lecturer with a great sense of humor."
+    },
+    {
+        "professor": "Prof. William Miller",
+        "university": "Mountain College",
+        "stars": 3.6,
+        "review": "Prof. Miller's lectures are okay, but he doesn't engage with students much."
+    },
+    {
+        "professor": "Dr. Susan Garcia",
+        "university": "Forest University",
+        "stars": 4.7,
+        "review": "Dr. Garcia is very approachable and always willing to help students after class."
+    },
+    {
+        "professor": "Prof. Christopher Thompson",
+        "university": "Lakeside College",
+        "stars": 3.9,
+        "review": "Prof. Thompson is knowledgeable, but his exams are very challenging."
+    },
+    {
+        "professor": "Dr. Elizabeth Moore",
+        "university": "Metro University",
+        "stars": 4.4,
+        "review": "Dr. Moore is an excellent professor who makes learning fun and interesting."
+    },
+    {
+        "professor": "Prof. Matthew Taylor",
+        "university": "Capital College",
+        "stars": 3.8,
+        "review": "Prof. Taylor's classes are informative, but his assignments are quite demanding."
+    },
+    {
+        "professor": "Dr. Angela Martinez",
+        "university": "Seaside University",
+        "stars": 4.5,
+        "review": "Dr. Martinez is a great professor who truly cares about her students' learning experience."
+    },
+    {
+        "professor": "Prof. Daniel Hernandez",
+        "university": "Central State College",
+        "stars": 3.7,
+        "review": "Prof. Hernandez is good at explaining the material, but the pace of the class is fast."
+    },
+    {
+        "professor": "Dr. Laura King",
+        "university": "Urban University",
+        "stars": 4.6,
+        "review": "Dr. King is an outstanding professor who makes every lecture interesting and engaging."
+    },
+    {
+        "professor": "Prof. Kevin Lee",
+        "university": "Bay State University",
+        "stars": 3.9,
+        "review": "Prof. Lee is a solid professor, but his grading can be a bit unpredictable."
+    }
+]
+}
