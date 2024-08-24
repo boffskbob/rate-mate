@@ -108,11 +108,14 @@ const SearchPage = () => {
         </Box>
       </Box>
       <Button
+        variant='contained'
         sx={{
-          position: 'fixed',  // Sticks the button to a fixed position on the screen
-          bottom: 20,         // 16px from the bottom of the screen
-          right: 20,          // 16px from the right side of the screen
-          zIndex: 1000,       // Ensures it stays on top of other elements
+          width: '100%',   // Button takes up the full width of its container
+          position: 'fixed',  
+          bottom: 20,         
+          right: 20,          
+          zIndex: 1000,
+          borderRadius: 10 
         }}
       >
         Questions? Ask RateMate!
