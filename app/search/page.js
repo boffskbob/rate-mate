@@ -110,12 +110,12 @@ const SearchPage = () => {
       <Button
         variant='contained'
         sx={{
-          width: '100%',   // Button takes up the full width of its container
           position: 'fixed',  
           bottom: 20,         
           right: 20,          
           zIndex: 1000,
-          borderRadius: 10 
+          borderRadius: 10,
+          backgroundColor: '#5856D6'
         }}
       >
         Questions? Ask RateMate!
