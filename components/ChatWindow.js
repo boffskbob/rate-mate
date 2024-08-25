@@ -1,72 +1,50 @@
-'use client'
-import Image from "next/image";
-import { useState } from "react";
-import { Box, Button, ListItemSecondaryAction, Stack, TextField } from "@mui/material";
+import { useEffect, useRef } from 'react';
+import { Box } from '@mui/material';
 
-export default function Home() {
-  const [messages, setMessages] = useState([
-    {
-      role : "model",
-      content : "Hi! I'm the rate my professor support assistant. How can I help you today?"
-    }
-  ])
-  const [message, setMessage] = useState('')
-  const sendMessage = async () => {
-    setMessages((messages) => [
-      ...messages,
-      {role : "user", content : message},
-      {role : "model", content : ''}
-    ])
-    setMessage('')
-    
-    const response = fetch('/api/chat', {
-      method : "POST",
-      headers : {
-        'Content-Type' : 'application/json',
-      },
-      body : JSON.stringify([...messages, {role : 'user', content : message}])
-    }).then(async(res) => {
-      const reader = res.body.getReader()
-      const decoder = new TextDecoder()
+export default function SidebarWindow({ open, onClose, children }) {
+  const windowRef = useRef(null); // used to keep track of specific DOM components
 
-      let result = ''
-      return reader.read().then(function processText({done, value}) {
-        if (done){
-          return result
-        }
-        const text = decoder.decode(value || new Uint8Array(), {stream : true})
-        setMessages((messages) => {
-          let lastMessage = messages[messages.length - 1]
-          let otherMessages = messages.slice(0, messages.length - 1)
-          return [
-            ...otherMessages,
-            {...lastMessage, content : lastMessage.content + text}
-          ]
-        })
-
-        return reader.read().then(processText)
-      })
+  // add/remove event listener for detecting clicks outside the window
+  useEffect(() => {
+    // handles clicks outside the window
+    const clickOutside = (event) => {
+      if (windowRef.current && !windowRef.current.contains(event.target)) {    // makes sure windowRef points to the main Box and event.target is outside the sidebar (aka windowRef)
+        onClose();
       }
-    )
-  }
+    };
+    
+    if (open) { // when the side window is open, listen for a click and check to see if it was outside the window
+      document.addEventListener('mousedown', clickOutside);
+    }
+    
+    return () => {
+      document.removeEventListener('mousedown', clickOutside);
+    };
+  }, [open, onClose]);
+
   return (
-  <Box width="100vw" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-    <Stack direction="column" width="500px" height="700px" border="1px solid black" p={2} spacing={3}>
-      {/* chatlog */}
-      <Stack direction="column" spacing={2} flexGrow={1} overflow="auto" maxHeight="100%">
-      {messages.map((message, index) => 
-        (<Box key={index} display="flex" justifyContent={message.role === "model" ? "flex-start" : "flex-end"}>
-          <Box bgcolor={message.role ==="model" ? "primary.main" : "secondary.main"} color="white" borderRadius={16} p={3}>
-            {message.content}
-          </Box>
-        </Box>)
-      )}
-      </Stack>
-      {/* Textfield */}
-      <Stack direction="row" spacing={2}>
-        <TextField label="Message" fullWidth value={message} onChange={(e) => {setMessage(e.target.value)}} />
-        <Button variant="contained" onClick={sendMessage}>Send</Button>
-      </Stack>
-    </Stack>
-  </Box>);
-}
+    <Box
+      ref={windowRef}   // windowRef is a reference to the box containing the sidebar
+      sx={{
+        position: 'fixed',
+        marginTop: "85px",
+        top: 0,
+        right: 0,
+        backgroundColor: '#f4f4f4',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+        transform: open ? 'translateX(0)' : 'translateX(100%)',
+        transition: 'transform 0.3s ease',
+        overflow: 'visible',
+        zIndex: 1200,
+        display: 'flex',
+        flexDirection: 'column',
+        maxHeight: "100vh",
+        width: 'auto'
+      }}
+    >
+      <Box sx={{ padding: 2 }}>
+        {children}
+      </Box>
+    </Box>
+  );
+};

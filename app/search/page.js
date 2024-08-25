@@ -5,6 +5,8 @@ import { Box, Typography, Select, MenuItem, Button } from '@mui/material';
 import SearchNavbar from "@/components/SearchNavbar";
 import mockData from '@/reviews.json';
 import ReviewCard from '@/components/ReviewCard';
+import ChatWindow from '@/components/ChatWindow';
+import Chatbot from '@/components/Chatbot';
 import { useSearchParams } from 'next/navigation';
 
 const SearchPage = () => {
@@ -12,6 +14,17 @@ const SearchPage = () => {
   const query = searchParams.get("q");
   
   const [subject, setSubject] = useState('');
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // helper functions to open/close the sidebar when ask prep button is clicked
+  const toggleWindow = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+  const closeWindow = () => {
+    setSidebarOpen(false);
+  };
 
   // filter reviews based on query AND subject
   // useMemo saves time by only rerendering the list when its dependencies change
@@ -112,6 +125,7 @@ const SearchPage = () => {
       </Box>
       <Button
         variant='contained'
+        onClick={toggleWindow}
         sx={{
           position: 'fixed',
           bottom: 20,
@@ -123,6 +137,9 @@ const SearchPage = () => {
       >
         Questions? Ask RateMate!
       </Button>
+      <ChatWindow open={sidebarOpen} onClose={closeWindow}>
+        <Chatbot/>
+      </ChatWindow>
     </>
   );
 };
