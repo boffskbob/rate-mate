@@ -6,7 +6,7 @@ export default function SearchNavbar() {
     // identical to other Navbar component, except about, contact, and other links are replaced with search bar component
     <AppBar position="fixed" elevation={0} sx={{ borderBottom: 1, borderColor: '#000', backgroundColor: '#fff' }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Box sx={{ height: "80px", display: "flex", flexDirection: "row", alignItems: "center", flexGrow: 1, gap: 5 }}>
+          <Box sx={{ height: "80px", display: "flex", flexDirection: "row", alignItems: "center", flexGrow: 1, gap: 14 }}>
             <Typography variant="h6" color="inherit" noWrap>
               <Box component="span" sx={{ display: 'flex', alignItems: 'center' }}>
                 <Link href="/" underline="none" color="textPrimary">

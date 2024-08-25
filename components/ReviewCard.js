@@ -23,7 +23,7 @@ const ReviewCard = ({ name, subject, stars, review }) => {
   };
 
   return (
-    <Card variant="outlined" sx={{ display: 'flex', padding: 2, margin: 3, alignItems: 'center' }}>
+    <Card variant="outlined" sx={{ display: 'flex', padding: 2, margin: 3, alignItems: 'center', maxWidth: 950 }}>
       <Grid container spacing={2}>
         {/* rating text and integer */}
         <Grid item>
