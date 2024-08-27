@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const systemPrompt = `You are an AI assistant designed to help students find the top 3 professors that best match their needs based on the information available on Rate My Professor. Your task is to understand the student's query, extract relevant information from the Rate My Professor database, and provide a concise and accurate list of the top 3 professors that meet their criteria.
 
-If the student provides a university name, ensure that the professors you recommend are associated with that university. If no university is specified, find the best matches across all available universities. For each professor, include relevant details such as overall rating, teaching style, availability, and any specific attributes mentioned in the student's query.
+If the student provides a subject name, ensure that the professors you recommend are associated with that subject. If no subject is specified, find the best matches across all available subjects. For each professor, include relevant details such as overall rating, teaching style, availability, and any specific attributes mentioned in the student's query.
 
 Your response should be helpful, clear, and focused on the student's needs.`
 
@@ -19,7 +19,7 @@ export async function POST(req){
     const model = genAI.getGenerativeModel({ model: "text-embedding-004"});
 
 
-    const text = data[data.length - 1].content
+    const text = data[data.length - 1].parts[0].text
     const result = await model.embedContent(text)
     const embedding = result.embedding
     
@@ -33,20 +33,20 @@ export async function POST(req){
     let resultString = 'Returned results : '
     results.matches.forEach((match) => {
         resultString += `
-        \n
+        <br />
         Professor: ${match.id}
         Review: ${match.metadata.review}
         University: ${match.metadata.university}
         Stars: ${match.metadata.stars}
-        \n\n`
+        <br /><br />`
     })
 
     
     // text generation model
-    const model2 = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model2 = genAI.getGenerativeModel({ model: "gemini-1.5-flash", systemInstruction : systemPrompt });
 
     const lastMessage = data[data.length - 1]
-    const lastMessageContent = lastMessage.content + resultString
+    const lastMessageContent = lastMessage.parts[0].text + resultString
     const lastDataWithoutLastMessage = data.slice(0, data.length - 1)
 
     // error with formatting here
@@ -56,22 +56,19 @@ export async function POST(req){
                 role: "user",
                 parts : [{text : "Hello"}]
             },
-            {
-                role : "model",
-                parts : [{text : systemPrompt}]
-            },
             ...lastDataWithoutLastMessage,
         ]
     })
-    const completion = chat.sendMessageStream(lastMessageContent)
+    const completion = await chat.sendMessageStream(lastMessageContent)
     
     const stream = new ReadableStream({
         async start(controller) { 
             const encoder = new TextEncoder()
             try {
                 for await (const chunk of completion.stream){
-                    const content = chunk.choices[0]?.delta?.content
+                    const content = chunk.text()
                     if (content){
+                        console.log(content)
                         const text =encoder.encode(content)
                         controller.enqueue(text)
                     }
