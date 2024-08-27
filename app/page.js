@@ -1,9 +1,9 @@
 "use client"
 
-import Image from "next/image";
 import Navbar from '@/components/Navbar';
 import SearchBar from "@/components/SearchBar";
-import { Container, Typography } from "@mui/material";
+import AboutSection from "@/components/About";
+import { Box, Container, Typography } from "@mui/material";
 
 export default function Home() {
   return (
@@ -18,7 +18,8 @@ export default function Home() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          borderRadius: 3,
         }}
       >
         <Typography variant="h1" component="h1" sx={{ fontWeight: 'bold', mb: 2, color: "#FFF" }}>
@@ -29,6 +30,7 @@ export default function Home() {
         </Typography>
         <SearchBar/>
       </Container>
+      <AboutSection />
     </>
 
   );
