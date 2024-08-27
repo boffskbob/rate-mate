@@ -30,7 +30,8 @@ export default function AboutSection() {
             What We Do
           </Typography>
           <Typography variant="body1" sx={{ mt: 2, fontSize: 20 }}>
-            Placeholder.
+          RateMate is your AI-powered, RAG chatbot for finding the best professors. 
+          Powered by Pinecone and Google Gemini, Ratemate analyzes user-submitted reviews to curate the top choices.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -39,7 +40,8 @@ export default function AboutSection() {
             Our Mission
           </Typography>
           <Typography variant="body1" sx={{ mt: 2, fontSize: 20 }}>
-            Placeholder
+            We aim to streamline your academic journey smoother by connecting you with professors who match your learning style and preferences. 
+            Finding the right professor has never been easier.
           </Typography>
         </Grid>
       </Grid>
