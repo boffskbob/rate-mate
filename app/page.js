@@ -31,8 +31,12 @@ export default function Home() {
         </Typography>
         <SearchBar/>
       </Container>
-      <AboutSection />
-      <ContactSection />
+      <div id='about'>
+        <AboutSection />
+      </div>
+      <div id='contact'>
+        <ContactSection />
+      </div>
     </>
 
   );
