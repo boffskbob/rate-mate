@@ -3,4 +3,5 @@
   padding: 0;
   margin: 0;
   scroll-padding-top: 90px;
+  scroll-behavior: smooth;
 }

@@ -6,7 +6,7 @@ export default function Navbar() {
         <Toolbar sx={{ display: "flex", justifyContent: 'space-between', alignItems: "center", justifyContent: "center" }}>
           <Box sx={{ height: "80px", display: "flex", flexDirection: "row", alignItems: "center", flexGrow: 1, gap: 5 }}>
             {/* icon image */}
-            <Link href="/" underline="none" color="textPrimary">
+            <Link href="#home" underline="none" color="textPrimary">
               <Typography variant="h6" color="inherit" noWrap fontSize={30}>
                 🍎
               </Typography>
