@@ -11,6 +11,7 @@ export default function Home() {
     <>
       <Navbar />
       <Container
+        id="home"
         maxWidth="100vw"
         sx={{
           bgcolor: "#5856D6",

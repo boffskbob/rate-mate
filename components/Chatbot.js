@@ -51,7 +51,7 @@ export default function Chatbot() {
     )
   }
   return (
-    <Stack direction="column" width="500px" height="700px" border="1px solid black" p={2} spacing={3}>
+    <Stack direction="column" width="500px" height="650px" border="1px solid black" p={2} spacing={3}>
       {/* chatlog */}
       <Stack direction="column" spacing={2} flexGrow={1} overflow="auto" maxHeight="100%">
       {messages.map((message, index) => 
