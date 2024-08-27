@@ -33,7 +33,7 @@ export default function ContactSection() {
             <IconButton sx={{ color: '#fff', mr: 2 }}>
               <PhoneIcon />
             </IconButton>
-            <Typography variant="body1">
+            <Typography fontSize={20} variant="body1">
               +1 234 567 890
             </Typography>
           </Box>
@@ -41,7 +41,7 @@ export default function ContactSection() {
             <IconButton sx={{ color: '#fff', mr: 2 }}>
               <EmailIcon />
             </IconButton>
-            <Typography variant="body1">
+            <Typography fontSize={20} variant="body1">
               contact@ratemate.com
             </Typography>
           </Box>
@@ -49,7 +49,7 @@ export default function ContactSection() {
             <IconButton sx={{ color: '#fff', mr: 2 }}>
               <LocationOnIcon />
             </IconButton>
-            <Typography variant="body1">
+            <Typography fontSize={20} variant="body1">
               123 RateMate Lane, Capital City, USA
             </Typography>
           </Box>
