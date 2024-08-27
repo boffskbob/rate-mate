@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Typography, Box, Link, Button } from '@mui/material';
 
 export default function Navbar() {
   return (
-    <AppBar position="static" color="transparent" elevation={0} sx={{ height: 90, display: "flex", justifyContent: "center", }}>
+    <AppBar position="fixed" elevation={0} sx={{ height: 90, display: "flex", justifyContent: "center", zIndex: 1000, borderColor: '#000', backgroundColor: '#fff'}}>
         <Toolbar sx={{ display: "flex", justifyContent: 'space-between', alignItems: "center", justifyContent: "center" }}>
           <Box sx={{ height: "80px", display: "flex", flexDirection: "row", alignItems: "center", flexGrow: 1, gap: 5 }}>
             {/* icon image */}

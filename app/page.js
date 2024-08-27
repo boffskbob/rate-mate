@@ -15,7 +15,7 @@ export default function Home() {
         sx={{
           bgcolor: "#5856D6",
           textAlign: 'center',
-          height: 'calc(100vh - 81px)',
+          height: '100vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',

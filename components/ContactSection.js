@@ -27,9 +27,9 @@ export default function ContactSection() {
       <Typography variant="h3" align="center" sx={{ fontWeight: 'bold', mb: 4 }}>
         Contact Us
       </Typography>
-      <Grid container spacing={6} >
+      <Grid container spacing={4} sx={{ display: "flex", alignItems: "flex-start"}}>
         <Grid item xs={12} md={6}>
-          <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', mb: 4, ml: 20 }}>
             <IconButton sx={{ color: '#fff', mr: 2 }}>
               <PhoneIcon />
             </IconButton>
@@ -37,7 +37,7 @@ export default function ContactSection() {
               +1 234 567 890
             </Typography>
           </Box>
-          <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', mb: 4, ml: 20 }}>
             <IconButton sx={{ color: '#fff', mr: 2 }}>
               <EmailIcon />
             </IconButton>
@@ -45,7 +45,7 @@ export default function ContactSection() {
               contact@ratemate.com
             </Typography>
           </Box>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', ml: 20 }}>
             <IconButton sx={{ color: '#fff', mr: 2 }}>
               <LocationOnIcon />
             </IconButton>
