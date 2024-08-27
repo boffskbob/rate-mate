@@ -9,7 +9,7 @@ export default function AboutSection() {
       sx={{ 
         p: 6, 
         backgroundColor: '#5856D6', // same purple theme
-        color: '#fff', // white text color
+        color: '#fff',
         mt: 3,
         borderRadius: 3,
         textAlign: 'center',
