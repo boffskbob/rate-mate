@@ -1,125 +1,124 @@
 {
-    "reviews": [
-      {
-        "name": "Andrew Lopez",
-        "subject": "Engineering",
-        "stars": 2,
-        "review": "Professor Lopez's lectures are hard to follow, and he often rushes through the material. His exams are difficult and he doesn't offer much help outside of class."
-      },
-      {
-        "name": "Ashley Moore",
-        "subject": "Art History",
-        "stars": 5,
-        "review": "Professor Moore is passionate about art and her enthusiasm is contagious. Her exams are straightforward if you attend lectures and take good notes."
-      },
-      {
-        "name": "Christopher Taylor",
-        "subject": "Political Science",
-        "stars": 2,
-        "review": "Dr. Taylor's lectures are disorganized and it's hard to follow his train of thought. His grading is arbitrary, and he doesn't offer much help outside of class."
-      },
-      {
-        "name": "Daniel Thomas",
-        "subject": "Music",
-        "stars": 3,
-        "review": "Professor Thomas is knowledgeable, but his teaching style can be a bit dry. His exams are fair, but you need to stay on top of the material."
-      },
-      {
-        "name": "David Brown",
-        "subject": "Economics",
-        "stars": 3,
-        "review": "Professor Brown is knowledgeable but can be hard to follow. His exams are tricky, and his grading can be harsh if you don’t meet his expectations."
-      },
-      {
-        "name": "Doug Johnson",
-        "subject": "Chemistry",
-        "stars": 5,
-        "review": "Dr. Johnson is very knowledgeable, but his lectures are fast-paced, so staying on top of the material is crucial. His exams are tough but fair, and he’s helpful during office hours."
-      },
-      {
-        "name": "Elizabeth Anderson",
-        "subject": "Environmental Science",
-        "stars": 5,
-        "review": "Dr. Anderson is an excellent professor. She is very passionate about the environment, and her lectures are both informative and inspiring."
-      },
-      {
-        "name": "Emily Davis",
-        "subject": "English",
-        "stars": 5,
-        "review": "Professor Davis is amazing! She is very approachable and provides detailed feedback on essays. Her classes are discussion-based, which makes them interesting."
-      },
-      {
-        "name": "James Wilson",
-        "subject": "Philosophy",
-        "stars": 4,
-        "review": "Dr. Wilson's lectures are thought-provoking, but sometimes he goes off on tangents. His exams are fair, but you need to be well-prepared."
-      },
-      {
-        "name": "Jessie Johnson",
-        "subject": "Computer Science",
-        "stars": 5,
-        "review": "Professor Johnson explains things well, but his expectations for exams are extremely high. If you’re not detail-oriented, you might find his grading harsh."
-      },
-      {
-        "name": "Jennifer Harris",
-        "subject": "Psychology",
-        "stars": 4,
-        "review": "Professor Harris is engaging and makes the material interesting. Her exams are challenging but fair, and she is always available for questions."
-      },
-      {
-        "name": "John Lee",
-        "subject": "Mathematics",
-        "stars": 3,
-        "review": "Professor Lee is great at making tough concepts clear and relevant. However, his quizzes are frequent, and if you fall behind, it's hard to catch up."
-      },
-      {
-        "name": "Kevin Clark",
-        "subject": "Mathematics",
-        "stars": 3,
-        "review": "Dr. Clark is knowledgeable but his lectures can be a bit dull. His exams are challenging, but if you attend class regularly, you should do fine."
-      },
-      {
-        "name": "Laura White",
-        "subject": "Biology",
-        "stars": 4,
-        "review": "Dr. White is very organized and her lectures are easy to follow. However, her exams are difficult and require a deep understanding of the material."
-      },
-      {
-        "name": "Linda Gonzalez",
-        "subject": "Business",
-        "stars": 5,
-        "review": "Professor Gonzalez is very organized and her lectures are clear and concise. She provides great feedback on assignments and is always willing to help."
-      },
-      {
-        "name": "Matthew Martinez",
-        "subject": "Sociology",
-        "stars": 3,
-        "review": "Professor Martinez is knowledgeable, but his lectures can be boring. His assignments are easy, but his exams are tough and require a lot of studying."
-      },
-      {
-        "name": "Michael Green",
-        "subject": "History",
-        "stars": 2,
-        "review": "Professor Green's lectures can be dry and monotonous. His grading is inconsistent, and he doesn't provide much feedback on assignments."
-      },
-      {
-        "name": "Patricia Jackson",
-        "subject": "Linguistics",
-        "stars": 4,
-        "review": "Dr. Jackson is a great professor. She explains complex concepts clearly and is very approachable. Her exams are fair if you pay attention in class."
-      },
-      {
-        "name": "Sarah Kim",
-        "subject": "Physics",
-        "stars": 4,
-        "review": "Dr. Kim is passionate about physics and makes the lectures engaging. However, her homework assignments are challenging and time-consuming."
-      },
-      {
-        "name": "Susan Rodriguez",
-        "subject": "Literature",
-        "stars": 4,
-        "review": "Professor Rodriguez is passionate about literature and her lectures are engaging. Her exams are fair, but you need to do the readings to succeed."
-      }
-    ]
-  }
-  
+  "reviews": [
+    {
+      "name": "Andrew Lopez",
+      "subject": "Engineering",
+      "stars": 2,
+      "review": "Professor Lopez's lectures are hard to follow, and he often rushes through the material. His exams are difficult and he doesn't offer much help outside of class."
+    },
+    {
+      "name": "Ashley Moore",
+      "subject": "Art History",
+      "stars": 5,
+      "review": "Professor Moore is passionate about art and her enthusiasm is contagious. Her exams are straightforward if you attend lectures and take good notes."
+    },
+    {
+      "name": "Christopher Taylor",
+      "subject": "Political Science",
+      "stars": 2,
+      "review": "Dr. Taylor's lectures are disorganized and it's hard to follow his train of thought. His grading is arbitrary, and he doesn't offer much help outside of class."
+    },
+    {
+      "name": "Daniel Thomas",
+      "subject": "Music",
+      "stars": 3,
+      "review": "Professor Thomas is knowledgeable, but his teaching style can be a bit dry. His exams are fair, but you need to stay on top of the material."
+    },
+    {
+      "name": "David Brown",
+      "subject": "Economics",
+      "stars": 3,
+      "review": "Professor Brown is knowledgeable but can be hard to follow. His exams are tricky, and his grading can be harsh if you don’t meet his expectations."
+    },
+    {
+      "name": "Doug Johnson",
+      "subject": "Chemistry",
+      "stars": 5,
+      "review": "Dr. Johnson is very knowledgeable, but his lectures are fast-paced, so staying on top of the material is crucial. His exams are tough but fair, and he’s helpful during office hours."
+    },
+    {
+      "name": "Elizabeth Anderson",
+      "subject": "Environmental Science",
+      "stars": 5,
+      "review": "Dr. Anderson is an excellent professor. She is very passionate about the environment, and her lectures are both informative and inspiring."
+    },
+    {
+      "name": "Emily Davis",
+      "subject": "English",
+      "stars": 5,
+      "review": "Professor Davis is amazing! She is very approachable and provides detailed feedback on essays. Her classes are discussion-based, which makes them interesting."
+    },
+    {
+      "name": "James Wilson",
+      "subject": "Philosophy",
+      "stars": 4,
+      "review": "Dr. Wilson's lectures are thought-provoking, but sometimes he goes off on tangents. His exams are fair, but you need to be well-prepared."
+    },
+    {
+      "name": "Jessie Johnson",
+      "subject": "Computer Science",
+      "stars": 5,
+      "review": "Professor Johnson explains things well, but his expectations for exams are extremely high. If you’re not detail-oriented, you might find his grading harsh."
+    },
+    {
+      "name": "Jennifer Harris",
+      "subject": "Psychology",
+      "stars": 4,
+      "review": "Professor Harris is engaging and makes the material interesting. Her exams are challenging but fair, and she is always available for questions."
+    },
+    {
+      "name": "John Lee",
+      "subject": "Mathematics",
+      "stars": 3,
+      "review": "Professor Lee is great at making tough concepts clear and relevant. However, his quizzes are frequent, and if you fall behind, it's hard to catch up."
+    },
+    {
+      "name": "Kevin Clark",
+      "subject": "Mathematics",
+      "stars": 3,
+      "review": "Dr. Clark is knowledgeable but his lectures can be a bit dull. His exams are challenging, but if you attend class regularly, you should do fine."
+    },
+    {
+      "name": "Laura White",
+      "subject": "Biology",
+      "stars": 4,
+      "review": "Dr. White is very organized and her lectures are easy to follow. However, her exams are difficult and require a deep understanding of the material."
+    },
+    {
+      "name": "Linda Gonzalez",
+      "subject": "Business",
+      "stars": 5,
+      "review": "Professor Gonzalez is very organized and her lectures are clear and concise. She provides great feedback on assignments and is always willing to help."
+    },
+    {
+      "name": "Matthew Martinez",
+      "subject": "Sociology",
+      "stars": 3,
+      "review": "Professor Martinez is knowledgeable, but his lectures can be boring. His assignments are easy, but his exams are tough and require a lot of studying."
+    },
+    {
+      "name": "Michael Green",
+      "subject": "History",
+      "stars": 2,
+      "review": "Professor Green's lectures can be dry and monotonous. His grading is inconsistent, and he doesn't provide much feedback on assignments."
+    },
+    {
+      "name": "Patricia Jackson",
+      "subject": "Linguistics",
+      "stars": 4,
+      "review": "Dr. Jackson is a great professor. She explains complex concepts clearly and is very approachable. Her exams are fair if you pay attention in class."
+    },
+    {
+      "name": "Sarah Kim",
+      "subject": "Physics",
+      "stars": 4,
+      "review": "Dr. Kim is passionate about physics and makes the lectures engaging. However, her homework assignments are challenging and time-consuming."
+    },
+    {
+      "name": "Susan Rodriguez",
+      "subject": "Literature",
+      "stars": 4,
+      "review": "Professor Rodriguez is passionate about literature and her lectures are engaging. Her exams are fair, but you need to do the readings to succeed."
+    }
+  ]
+}
