@@ -2,7 +2,8 @@
 
 import Navbar from '@/components/Navbar';
 import SearchBar from "@/components/SearchBar";
-import AboutSection from "@/components/About";
+import AboutSection from "@/components/AboutSection";
+import ContactSection from '@/components/ContactSection';
 import { Box, Container, Typography } from "@mui/material";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         <SearchBar/>
       </Container>
       <AboutSection />
+      <ContactSection />
     </>
 
   );
