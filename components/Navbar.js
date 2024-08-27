@@ -14,14 +14,14 @@ export default function Navbar() {
 
             {/* helper pages */}
             <Box sx={{ display: 'flex', flexDirection: "row", gap: 5, fontSize: 20}}>
-              <Link href="/about" underline="none" color="textPrimary">
+              <Link href="#about" underline="none" color="textPrimary">
                 About
+              </Link>
+              <Link href="#contact" underline="none" color="textPrimary">
+                Contact
               </Link>
               <Link href="/resources" underline="none" color="textPrimary">
                 Resources
-              </Link>
-              <Link href="/contact" underline="none" color="textPrimary">
-                Contact
               </Link>
             </Box>
           </Box>
